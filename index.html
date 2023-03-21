@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        .chat-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.chat-bubble {
+  background-color: #F5F7FA;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 60%;
+  position: relative;
+}
+
+.chat-bubble-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.chat-bubble-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.chat-bubble-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #B9B9B9;
+}
+
+.chat-bubble pre {
+  margin: 0;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+  color: #333;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+.copy-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #008CBA;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+    </style>
+  <div class="chat-container">
+    <div class="chat-bubble">
+      <div class="chat-bubble-header">
+        <div class="chat-bubble-buttons">
+          <div class="chat-bubble-button"></div>
+          <div class="chat-bubble-button"></div>
+          <div class="chat-bubble-button"></div>
+        </div>
+      </div>
+      <pre class="hljs">
+        <code class="bash">
+          #!/bin/bash
+          echo "Hello, World!"
+        </code>
+      </pre>
+      <button class="copy-button">Copy</button>
+    </div>
+  </div>
+</body>
+</html>
